@@ -4,7 +4,7 @@
 
 | Topic                                                    | Code Along | Anki(Interviews) |
 | -------------------------------------------------------- | ---------- | ---------------- |
-| Chap 3 \| Installation and Setup                         |            |                  |
+| Chap 3 \| Installation and Setup                         | ✅          | ✅                |
 | Chap 4 \| The very basics of Git (Adding and committing) |            |                  |
 | Chap 5 \| Commits in details                             |            |                  |
 | Chap 6 \| Working with branches                          |            |                  |
@@ -25,4 +25,4 @@
 
 ##  Plan as of 17 December
 
-- give to chatgpt and add to anki , code along
+- give to chatgpt and add to anki , code along and interview , i am flexible and try to create a really good repo

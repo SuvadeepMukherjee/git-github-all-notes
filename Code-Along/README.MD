@@ -1,6 +1,6 @@
 # Code Along
 
-## Git Configuration
+## Git Configuration and Basic Terminal Commands
 
 **Q2**:Code Along
 
