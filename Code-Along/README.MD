@@ -1,39 +1,33 @@
 # Code Along
 
-## Git Configuration and Basic Terminal Commands
+## Git Configuration 
 
 **Q1**:Code Along
 
 1. Check the current git configuration (the effective value after local overrides global)
 2. Change the git configuration globally 
-3. Check the git configuration again
+3. Check the git configuration again (the effective value after local overrides global)
 4. Now Change the git configuration locally 
 5. Check the local configuration and   global  configuration 
 
 **Solution**:
 
 - **Current git configuration**(effective value after local overrides global):
-
   - `name : `git config user.name
   - `email : `git config user.email`
-
 - **Change git configuration globally** 
 
   - name : `git config --global user.name "suvadeep"`
   - email : `git config --global user.email "suvadeepm0709@gmail.com"`
-
 - **Check git configuration again**:
-
-  - name :`git config user.name`
-
-  - email : `git config user.email`
-
+- name :`git config user.name`
+  
+- email : `git config user.email`
 - **Change git configuration locally**
 
   - name : `git config --local user.name "suva"`
-
   - email : `git config  --local user.email "suva@gmail.com"`
-
+  - Note ➡️ `git config --local user.name` only works inside a git repository
 - **Check local configuration and global configuration**:
 
   - local configuration ➡️ `git config --local --list`
@@ -41,60 +35,78 @@
 
 Note ➡️ Local git configuration overrides global configuration 
 
-**Q2**: Code along 
+## Basic Terminal Commands
 
-- list all files in your  directory and all files in a sub directory
-- print current working directory
-- change folder to another directory 
-- go up one directory 
-- create a file called `index.js`
-- create a folder called `playground`
-- delete the file `index.js`
-- delete the folder `playground`
+**Q1**: Code Along
+
+- List all files in the current directory
+- List all files in a specific subdirectory
+- Print current working directory
+- Change folder to another directory
+- Go up one directory
+- Create a file called `index.js`
+- Create a folder called `playground`
+- Delete the file `index.js`
+- Delete the folder `playground`
 - List all files including hidden files
 
 **Solution**:
 
-- list all files in your directory and all files in a sub directory 
-  - `ls` , `ls <dir>`
-- print current working directory 
+- **List files in the current directory**
+  - `ls`
+- **List files in a specific subdirectory**
+  - `ls <dir>`
+- **Print current working directory**
   - `pwd`
-- Change folder to another directory
+- **Change folder to another directory**
   - `cd <directory>`
-- Go up one directory 
+- **Go up one directory**
   - `cd ..`
-- create a file called `index.js`
+- **Create a file called `index.js`**
   - `touch index.js`
-- create a folder called playground
+- **Create a folder called `playground`**
   - `mkdir playground`
-- delete the file index.js
+- **Delete the file `index.js`**
   - `rm index.js`
-- delete the folder playground
-  - `rm -rf playground`
-- list all files including hidden files
+- **Delete the folder `playground`**
+  - `rmdir playground`
+  - (or `rm -rf playground` if the folder is not empty)
+- **List all files including hidden files**
   - `ls -a`
 
-## Adding and Committing
+##  Adding and Committing
+
+### Adding and Committing
 
 **Q1**: Code Along
 
-- make a folder called `temp`
-- git initialise that folder 
-- make 3 files `index.js` , `app.js`, `server.js`
-- add `index.js` to staging area 
-- check git status
-- add `app.js` and `server.js` to the staging area with one command
-- again check git status 
-- now commit `index.js`, `app.js` and `server.js` from staging area to repository with a inline commit message 
+- Make a folder called `temp`
+- Move into the `temp` folder
+- Initialise a Git repository
+- Create 3 files `index.js`, `app.js`, `server.js`
+- Add `index.js` to the staging area
+- Check Git status
+- Add `app.js` and `server.js` to the staging area with one command
+- Check Git status again
+- Commit all staged files with an inline commit message
 
 **Solution**:
 
--  make a folder called `temp` ➡️ `mkdir temp`
-- git initialise that folder ➡️ `git init`
-- make 3 files `index.js`, `app.js` , `server.js` ➡️ `touch index.js app.js server.js`
-- add index.js to staging area ➡️ `git add index.js`
-- check git status ➡️ `git status`
-- add `app.js` and `server.js` to the staging area with one command ➡️`git add .`
-- Check git status ➡️ `git status`
-- commit `index.js` , `app.js` and `server.js` from staging area to repository with an inline commit message ➡️ `git commit -m "add index.js,app.js and server.js to repository"`
-
+- Make a folder called `temp`
+  - `mkdir temp`
+- Move into the folder
+  - `cd temp`
+- Initialise Git repository
+  - `git init`
+- Create files
+  - `touch index.js app.js server.js`
+- Add `index.js` to staging area
+  - `git add index.js`
+- Check Git status
+  - `git status`
+- Add `app.js` and `server.js` to staging area
+  - `git add app.js server.js`
+- Check Git status again
+  - `git status`
+- Commit staged files with inline message
+  - `git commit -m "add index.js, app.js and server.js"`
