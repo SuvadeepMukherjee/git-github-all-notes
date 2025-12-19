@@ -89,6 +89,7 @@ Note ➡️ Local git configuration overrides global configuration
 - Add `app.js` and `server.js` to the staging area with one command
 - Check Git status again
 - Commit all staged files with an inline commit message
+- Check the logs both inline and detailed
 
 **Solution**:
 
@@ -110,3 +111,6 @@ Note ➡️ Local git configuration overrides global configuration
   - `git status`
 - Commit staged files with inline message
   - `git commit -m "add index.js, app.js and server.js"`
+- Check git logs
+  - one line : `git log --oneline`
+  - detailed: `git log`
