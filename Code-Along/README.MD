@@ -161,6 +161,8 @@ Note ➡️ Local git configuration overrides global configuration
     - Close the default editor  
 - Check git logs ➡️`git log --oneline`
 
+## Branches
+
 **Q**: Code Along 
 
 - make a folder called `temp` and move to that folder , `git init` that folder 
@@ -182,8 +184,6 @@ Note ➡️ Local git configuration overrides global configuration
 - Create 2 new branches `branch2` and `branch3` each with a single command ➡️ `git checkout -b branch2` , `git checkout -b branch3` 
 - Rename branch `branch1` to `branchA` ➡️ `git branch -M branchA` ( We must be on the branch we want to rename)
 - Delete the branch `branch3` ➡️ `git branch -d branch3`
-
-## Merging Branches 
 
 **Q**: Demo of fast forward merges 
 
@@ -249,3 +249,6 @@ Note ➡️ Local git configuration overrides global configuration
 - Modify the same line on master to "Suvadeep Mukherjee" , commit it with the commit message "master changes greeting" ➡️ Follow the instructions
 - Merge feature into master(conflict) ➡️ `git merge feature`
 - fix the conflicts keep the incoming changes ➡️ Follow the instructions
+
+## Stashing
+
