@@ -114,3 +114,49 @@ Note ➡️ Local git configuration overrides global configuration
 - Check git logs
   - one line : `git log --oneline`
   - detailed: `git log`
+
+**Q**: Simulate entering and exiting Vim 
+
+- Make a temporary folder `temp`
+- cd into temp 
+- make a file `hello.txt`
+- open `hello.txt` with `vim hello.txt`
+- Inside the editor write a message `Hello Vim`
+- exit vim
+
+**Solution**:
+
+- make a temporary folder `temp` ➡️ `mkdir temp`
+- cd into temp ➡️ `cd temp`
+- make a file `hello.txt` ➡️ `touch hello.txt`
+- `vim hello.txt`
+- Vim Commands 
+  - i ➡️ enter insert mode
+  - Write `Hello Vim`
+  - To exit vim ➡️ `Esc` the `:wq⏎ `
+  - Tricks : ✅ **I Easily Eat Worms Quickly** ➡️`i`➡️Enter Commit Message ➡️ `ESC` ➡️ `:wq` ⏎
+
+**Q**: Simulating Commit messages in default editor
+
+- Create a temp folder called `temp`
+- Change folder to `temp`
+- Create  a file called `index.js`
+- Open folder with Vs Code
+- Edit `index.js` 
+- Commit without inline message make the commit message `initial`
+- Amend the commit message to be `initial commit`
+- Check logs 
+
+**Solution**:
+
+- Creating a temp folder called `temp` ➡️ `mkdir temp`
+- Change folder to `temp` ➡️ `cd temp`
+- Create a file called `index.js` ➡️ `touch index.js`
+- Open folder with Vs Code ➡️ `code .`
+- Commit without inline message make the commit message `initial` ➡️ `git init`,`git add .`,`git commit` , Write in default editor `initial`
+- Amend the commit message to be `initial commit` 
+  - `git commit --amend`
+    - This will open up default editor
+    - Change `initial` to `initial commit`
+    - Close the default editor  
+- Check git logs ➡️`git log --oneline`

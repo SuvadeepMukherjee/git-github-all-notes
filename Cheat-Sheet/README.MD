@@ -31,6 +31,14 @@
 - Checking git logs 
   - `git log`
   - `git log --oneline`
+  - Note ➡️ If there are lots of git logs the command to exit pager : `q`
+- Committing without any inline commit message 
+  - `git commit`
+  - Opens `$EDITOR`; commit **fails** if message is empty
+
+- Ammending the last commit message 
+  - `git commit --amend`
+
 
 Note ➡️
 
