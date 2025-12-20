@@ -14,10 +14,13 @@
 
 Note ➡️ make it a cloze card 
 
-
-
-
-
 **Solution**:
 
 Make it a cloze overview
+
+**Q3**: What is HEAD ? 
+
+**Solution**:
+
+- Each branch has a branch reference pointing to where we left called *branch pointer*
+- **HEAD** is simply a pointer that refers to the current location in our repository .It points to a particular branch reference![HEAD](../assets/HEAD.png)

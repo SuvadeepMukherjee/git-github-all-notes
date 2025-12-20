@@ -18,7 +18,7 @@
 - Check Global Configuration 
   - `git config --global --list`
 
-## Basics of Adding and Committing
+## Adding and Committing
 
 - Initializing a git repo 
   - `git init`
@@ -47,4 +47,20 @@ Note ➡️
   <img src="../assets/git-workflow.png" alt="git-workflow" style="zoom:100%;" />
 
   
+
+## Branches
+
+- View your existing branches ➡️`git branch`
+
+- To exit out of the window showing all the branches(if it shows in full screen)  ➡️`q`
+- Create a new branch (does not switch to that branch) ➡️ `git branch branchName`
+- Switch to an existing branch ➡️ `git switch branchName`
+- Create and switch to a new branch ➡️ `git checkout branch -b branchName`
+- Renaming a branch ➡️ `git branch -M newName`(We must be on the branch we want to rename)
+- Deleting a branch ➡️ `git branch -d branchToDelete`
+  - We cannnot delete a branch that's not fully merged 
+  - We cannot delete the branch if we are on it 
+  - We can delete a branch forcefully (if we are on the branch or the branch is not fully merged with `git branch -D branchName`)   
+
+
 
