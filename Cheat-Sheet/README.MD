@@ -96,4 +96,35 @@ Note ➡️
 - Dropping a particular stash (say stash@{2}) ➡️`git stash drop stash@{2}`
 - Stashing with a comment ➡️ `git stash push -m "WIP:refactor auth logic"`
 
-   
+
+##  Undoing Changes
+
+- View the contents of an old commit 
+
+  - `git checkout commit-hash` (This will put us in detached HEAD)
+
+- detached HEAD 
+
+  - HEAD is a pointer to the current branch reference (branch reference is a pointer to the last commit made on a particular branch)
+  - When we do `git checkout commit-hash` HEAD points at that commit rather than at the branch pointer
+
+- To reattach detached HEAD
+
+  - `git switch -` ➡️ This will switch back to wherever we were before
+
+- Restore the contents of a file to the state they were at the last commit ➡️ `git restore file`
+
+- Reset the repo back to a specific commit (only the commits are gone , changes are there) ➡️`git reset commit-hash`
+
+- Reset the repo back to a specific commit(both the commits and changes are gone)➡️ `git reset --hard commit-hash`
+
+- `git reset` vs `git revert`
+
+  - reset moves the branch pointer backwards eliminating commits
+  - revert creates a brand new commit which reverses the changes from a commit (Because it results in a new commit we will prompted to enter a commit message)
+
+  
+
+  
+
+ 

@@ -252,3 +252,36 @@ Note ➡️ Local git configuration overrides global configuration
 
 ## Stashing
 
+**Q**: Stashing Demo 
+
+- git init a practise repo `git-stash-lab` and then open it with VS Code
+- Add a file `app.js` , add the line `console.log("version 1")`, then commit it with the message "initial commit"
+- Add Uncommitted changes like `console.log("version 2")`
+- Stash those changes
+- Add Uncommitted changes again like `console.log("version 3")`
+-  stash those changes with a message 
+- Add uncommitted changes like `console.log("version 4")` then stash them with no messages
+-  List all the stashed changes
+- apply the latest stash without removing it from the stash then again stash it
+-  Now apply the latest stash but this time remove it from the stash  then again stash it
+- List all the stashes and then apply `stash@{2}`
+- Stash the changes again
+- List all the stash  and drop `stash@{3}`
+- Clear the stash
+
+**Solution**:
+
+- git init a practise repo `git-stash-lab` ➡️ `mkdir git-stash-lab` , `cd git-stash-lab` , `git init`, `code .`
+- Add a file `app.js` , add the line `console.log("version 1")`, then commit it with the message "initial commit" ➡️ Follow the instructions
+- Add Uncommitted Changes ➡️ Follow the instructions
+- Stash those changes ➡️ `git stash`
+- Stash those changes with a message ➡️`git stash -m "WIP : console.log("version 3)"`
+- Add uncommitted changes like `console.log("version 4")` then stash them with no messages ➡️ Follow the instructions
+- List all the stashed changes ➡️ `git stash list`
+- apply the latest stash without removing it from the stash ➡️ `git stash apply`, `git stash`
+- Now apply the latest stash but this time remove it from the stash  ➡️`git stash pop`,`git stash`
+- List all the stashes and then apply `stash@{2}` ➡️`git stash list` , `git stash apply stash@{2}`
+- Stash the changes ➡️ `git stash`
+- List all the stash  and drop `stash@{3}` ➡️`git stash list` , `git stash drop stash@{3}`
+- Clear the stash ➡️ `git stash clear`
+

@@ -8,7 +8,7 @@
 | Basic Terminal Commands | ✅    | ✅    | ✅           |
 | Adding and Committing   | ✅    | ✅    | ✅           |
 | Branches                | ✅    | ✅    | ✅           |
-| Stashing                |      |      |             |
+| Stashing                | ✅    | ✅    | ✅           |
 | Undoing Changes         |      |      |             |
 | Github                  |      |      |             |
 | Rebasing                |      |      |             |
