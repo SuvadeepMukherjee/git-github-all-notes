@@ -7,7 +7,7 @@
 | Chap 3 \| Installation and Setup                         | ✅          | ✅                | ✅           |
 | Chap 4 \| The very basics of Git (Adding and committing) | ✅          | ✅                | ✅           |
 | Chap 5 \| Commits in details                             | ✅          | ✅                | ✅           |
-| Chap 6 \| Working with branches                          |            |                  |             |
+| Chap 6 \| Working with branches                          | ✅          | ✅                | ✅           |
 | Chap 7 \| Merging branches                               |            |                  |             |
 | Chap 8 \| Comparing changes with git diff                |            |                  |             |
 | Chap 9 \| The Ins and Outs of Stashing                   |            |                  |             |

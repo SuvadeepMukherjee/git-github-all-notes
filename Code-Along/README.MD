@@ -160,3 +160,25 @@ Note ➡️ Local git configuration overrides global configuration
     - Change `initial` to `initial commit`
     - Close the default editor  
 - Check git logs ➡️`git log --oneline`
+
+**Q**: Code Along 
+
+- make a folder called `temp` and move to that folder , `git init` that folder 
+- Make some random commit 
+- Create a new branch `branch1` without switching to it 
+- Switch to `branch1`
+- View all existing branches 
+- Create 2 new branches `branch2` and `branch3` each with a single command 
+- Rename branch `branch1` to `branchA`
+- Delete the branch `branch3`
+
+**Solution**:
+
+- `mkdir temp` , `cd temp` , `git init`
+- Make some random commit ➡️ `touch index.js`, `git add .` , `git commit -m "initial commit"`
+- Create a new branch `branch1`  ➡️ `git branch branch1`
+- Switch to branch1 ➡️ `git switch branch1`
+- View all existing branches ➡️ `git branch`
+- Create 2 new branches `branch2` and `branch3` each with a single command ➡️ `git checkout -b branch2` , `git checkout -b branch3` 
+- Rename branch `branch1` to `branchA` ➡️ `git branch -M branchA` ( We must be on the branch we want to rename)
+- Delete the branch `branch3` ➡️ `git branch -d branch3`
