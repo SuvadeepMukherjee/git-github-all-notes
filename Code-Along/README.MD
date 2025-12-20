@@ -182,3 +182,70 @@ Note ➡️ Local git configuration overrides global configuration
 - Create 2 new branches `branch2` and `branch3` each with a single command ➡️ `git checkout -b branch2` , `git checkout -b branch3` 
 - Rename branch `branch1` to `branchA` ➡️ `git branch -M branchA` ( We must be on the branch we want to rename)
 - Delete the branch `branch3` ➡️ `git branch -d branch3`
+
+## Merging Branches 
+
+**Q**: Demo of fast forward merges 
+
+- Create a `temp` folder and `cd` into it
+- Open it with VS Code
+- Create a file called `index.js` , write something in it and commit it like `console.log("Hello World")` on the first line
+- Create a new branch and directly switch to that branch in a single command ,name in FF-branch
+- Create 2 new commits on the `FF-branch`, add the following 2 lines `commit 1 on FF` , `commit 2 on FF` on the second and third line respectively  
+- Switch back to `master` branch
+- Merge FF-branch to master 
+
+**Solution**:
+
+- Create a `temp` folder and `cd`  into it ➡️ `mkdir temp` and `cd temp` 
+- Open it with VS Code ➡️ `code .`
+- Create a file called `index.js` , write something in it and commit it like `console.log("Hello World")` on the first line ➡️ Follow the instructions
+- Create a new branch and directly switch to that branch in a single command ➡️ `git checkout -b FF-branch`
+- Create 2 new commits on the `FF-branch`, add the following 2 lines `commit 1 on FF` , `commit 2 on FF` on the second and third line respectively   ➡️ Follow the instructions
+- Switch back to `master` branch ➡️ `git switch master`
+- Merge FF-branch to master ➡️ `git merge FF-branch`![FF-Merge](../assets/FF-Merge.png)
+
+**Q**: Demo of merges with no conflicts
+
+-  Create a rep `git-merge-no-conflict`
+- Open it with VS Code 
+- Create a file called `master.txt` and write `line 1 on  master` on it and then commit it with the message "initial commit"
+- Create a new branch called `feature` 
+- Create a file called `feature.txt` and write Feature  work on it and then commit it with the message "add feature file"
+- Switch back to `master`
+- Add the text `line 2 on master` in the file `master.txt`, add it and commit it 
+- Merge feature into master
+
+**Solution**:
+
+- Create a rep `git-merge-no-conflict` ➡️`mkdir git-merge-no-conflict` , `cd git-merge-no-conflict` , `git init`
+- Open it with VS Code ➡️ `code .`
+- Create a file called `master.txt` and write `line1 on master` on it and then commit with the commit message `line1 on master` ➡️ Follow the instructions
+- Create a new branch called `feature` ➡️ `git checkout -b feature`
+- Create a file called `feature.txt` and write Feature  work on it and then commit it with the message "add feature file" ➡️ Follow the instructions
+- Switch back to master ➡️ `git switch master` 
+- Add the text `line 2 on master` in the file `master.txt`, add it and commit it with the commit message `line 2 on master`   ➡️ Follow the instructions
+- Merge feature into master ➡️ `git merge feature`, give the commit message in your default editor and the merge is done![no-conflict-merge](../assets/no-conflict-merge.png)
+
+**Q**: Demo of merge with conflicts 
+
+- Create a repo `git-merge-conflict` , open it in VS Code
+- Create a file `file.txt` and write `Hello from master` on it , add it and commit it with the message "initial commit on master "
+- Create a branch called `feature`
+- Change `Hello from master` to `Hello from feature` , commit it with the message `feature change greeting`
+- Switch back to master
+- Modify the same line on master to "Suvadeep Mukherjee" , commit it with the commit message "master changes greeting"
+- Merge feature into master (conflict)
+- fix the conflicts keep the incoming changes
+- Add the file then commit it
+
+**Solution**: 
+
+- Create a repo `git-merge-conflict` ➡️ `mkdir git-merge-conflict` , `cd git-merge-conflict` , `git init` , `code .`
+- Create a file `file.txt` and write `Hello from master` on it , add it and commit it with the message "initial commit on master " ➡️ Follow the instructions
+- Create a branch called feature ➡️ `git checkout -b feature`
+- Change `Hello from master` to `Hello from feature` commit it with the message `feature change greeting` ➡️ Follow the instructions
+- Switch back to master ➡️ `git switch master`
+- Modify the same line on master to "Suvadeep Mukherjee" , commit it with the commit message "master changes greeting" ➡️ Follow the instructions
+- Merge feature into master(conflict) ➡️ `git merge feature`
+- fix the conflicts keep the incoming changes ➡️ Follow the instructions
