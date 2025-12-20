@@ -285,3 +285,59 @@ Note ➡️ Local git configuration overrides global configuration
 - List all the stash  and drop `stash@{3}` ➡️`git stash list` , `git stash drop stash@{3}`
 - Clear the stash ➡️ `git stash clear`
 
+## Undoing Changes
+
+**Q**: Code Along
+
+- git init `git-undo-lab` then open with VS Code
+
+- Create a file `file.txt` , add the text `v1` to it and then commit with the message "commit 1"
+
+- On the file `file.txt` add the text `v2` to it and then commit with the message "commit 2"
+
+- On the file `file.txt` add the text `v3` to it and then commit with the mesage "commit 3"
+
+- Check commit history 
+
+- Checkout commit 1
+
+- Reattach detached HEAD
+
+- Add the text "BAD CHANGE" to `file.txt` but dont commit it
+
+- Restore the file to its old content
+
+- Remove only the commits commit 2 and commit 3 , keep the changes
+
+- Check your work with `git log --oneline`
+
+- Commit with the message "recommit v2 and v3 "
+
+- Make a hard reset to commit 1
+
+- Recreate commit 2 and commit 3 , commit 2 ➡️ v2 , commit 3 ➡️ v3
+
+- `git revert commit 2`
+
+  
+
+**Solution**:
+
+- git init `git-undo-lab` ➡️ `mkdir git-undo-lab` , `cd git-undo-lab` , `git init` then `code .`
+- Create a file `file.txt` , add the text `v1` to it and then commit with the message "commit 1" ➡️ Follow the instructions
+- On the file `file.txt` add the text `v3` to it and then commit with the mesage "commit 3" ➡️ Follow the instructions
+- On the file `file.txt` add the text `v3` to it and then commit with the mesage "commit 3" ➡️ Follow the instructions
+- Check commit history ➡️ `git log --oneline`
+- Checkout commit 1 ➡️ `git checkout commit-hash-commit1`
+- Reattach detached HEAD ➡️ `git switch -`
+- Add the text "BAD CHANGE" to `file.txt` ➡️ Follow the instructions
+- Restore the file to its old content ➡️ `git restore file.txt`
+- Remove only the commits commit 2 and commit 3 , keep the changes ➡️ `git reset commit-hash-commit-1`
+- Check your work with `git log --oneline` ➡️ `git log --oneline`
+- Commit with the message "recommit v2 and v3 " ➡️ Follow the instructions
+- Make a hard reset to commit 1 ➡️ `git reset --hard commit-hash-commit1`
+- Recreate commit 2 and commit 3 , commit 2 ➡️ v2 , commit 3 ➡️ v3 ➡️➡️ Folow the instructions
+- `git revert commit 2` ➡️ `git revert commit-2-hash` (This will move the pointers to the parent of commit 2 i.e commit 1)
+
+
+
