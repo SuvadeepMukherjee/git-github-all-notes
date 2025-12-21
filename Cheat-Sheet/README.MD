@@ -123,8 +123,15 @@ Note ➡️
   - reset moves the branch pointer backwards eliminating commits
   - revert creates a brand new commit which reverses the changes from a commit (Because it results in a new commit we will prompted to enter a commit message)
 
-  
 
-  
+## Github
 
- 
+- Cloning a repo 
+  -  `git clone <URL>`
+  - Example ➡️ `git clone https://github.com/pytorch/pytorch`
+- Viewing Remotes
+  - `git remote`
+  - `git remote -v`
+- Adding a new remote 
+  - `git remote add <name> <URL>`  
+  - Example  

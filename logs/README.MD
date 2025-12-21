@@ -26,3 +26,19 @@
 ##  Plan as of 17 December
 
 - give to chatgpt and add to anki , code along and interview , i am flexible and try to create a really good repo
+
+# Topics
+
+- Goal as of 21st December 
+
+| Topics                  | Anki | Demo | Cheat Sheet |
+| ----------------------- | ---- | ---- | ----------- |
+| Git Configuration       | ✅    | ✅    | ✅           |
+| Basic Terminal Commands | ✅    | ✅    | ✅           |
+| Adding and Committing   | ✅    | ✅    | ✅           |
+| Branches                | ✅    | ✅    | ✅           |
+| Stashing                | ✅    | ✅    | ✅           |
+| Undoing Changes         | ✅    | ✅    | ✅           |
+| Github                  |      |      |             |
+| Rebasing                |      |      |             |
+| Cherry Pick             |      |      |             |
