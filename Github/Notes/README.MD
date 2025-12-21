@@ -146,10 +146,12 @@
 
     - Thus, if there are changes (commits, PR merges, …) made to the original repository, we can pull those changes down
 
-    - ```
+      ```
       git remote add upstream <original-url>
       ```
 
 - Make changes and add/commit on a feature branch on your local machine
+
 - Push up new feature branch to `origin` (your forked repo)
+
 - Open a **pull request** to the original project repo containing the new work on your forked repo

@@ -103,3 +103,75 @@
 - Add a new file locally name it `index.js` add whatever you want (locally) ➡️ Follow the instructions
 - Create a new branch , add it , commit it , push the new branch, create a pull request ➡️ Follow the instructions
 - Check from `suvadeep-ship-it` and you will see there is a new `PR` ➡️ Follow the instructions
+
+**Q**: `oss-demo`
+
+- Log in to `suvadeep-ship-it` on Github 
+
+  - create a new repository :`oss-demo`
+
+  - Edit the `README.md` to 
+
+    ```bash
+    OSS Demo Project
+    
+    This is a demo open source project.
+    Contributions are welcome.
+    ```
+
+  - Commit directly to `main`
+
+- Fork the repo
+
+  - Log in to **`SuvadeepMukherjee`** on GitHub.
+    - Go to: `https://github.com/suvadeep-ship-it/oss-demo`
+    - Click Fork
+
+- Clone your fork locally
+
+- Open your clone with VSCode
+
+- Add the upstream remote(original project)
+
+- Verify the remotes
+
+- Create and switch to a feature branch  `docs/add-contribution-guide`
+
+- Make a meaningful change locally
+
+  - Create a new file , `CONTRIBUTING.MD`
+
+  - Add content:
+
+    ```bash
+    # Contributing Guide
+    
+    - Fork the repository
+    - Create a feature branch
+    - Commit clean changes
+    - Open a pull request
+    ```
+
+  - Stage and commit 
+
+    ```bash
+    git add CONTRIBUTING.md
+    git commit -m "Add contributing guide for new contributors"
+    ```
+
+- Push feature branch to your fork (origin)
+- Create a Pull Request from `SuvadeepMukherjee`
+- Review and merge as  maintainer(from `suvadeep-ship-it`)
+
+**Solution**: 
+
+- Log in to `suvadeep-ship-it` on Github  ➡️ Follow the instructions
+- Fork the repo ➡️ Follow the instructions
+- Clone your fork locally ➡️ Follow the instructions
+- Open your clone with VSCode ➡️ Follow the instructions
+- Add the upstream remote(original project) ➡️ `git remote add upstream https://github.com/suvadeep-ship-it/oss-demo.git`
+- Create and switch to a feature branch  `docs/add-contribution-guide` ➡️ `git checkout -b docs/add-contribution-guide`
+- Make a meaningful change locally ➡️ Follow the instructions
+- Push feature branch to your fork (origin) ➡️`git push origin docs/add-contribution-guide`
+- Create a Pull Request from `SuvadeepMukherjee` ➡️ Follow the instructions
+- Review and merge as  maintainer(from `suvadeep-ship-it`) ➡️ Follow the instructions
