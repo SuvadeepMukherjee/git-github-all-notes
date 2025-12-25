@@ -3,7 +3,7 @@
 | Topic           | Link |
 | --------------- | ---- |
 | Installation    | ✅    |
-| Committing      |      |
+| Committing      | ✅    |
 | Branches        |      |
 | Stashing        |      |
 | Undoing Changes |      |
