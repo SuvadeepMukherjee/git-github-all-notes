@@ -119,7 +119,6 @@ Note ➡️
 - Reset the repo back to a specific commit(both the commits and changes are gone)➡️ `git reset --hard commit-hash`
 
 - `git reset` vs `git revert`
-
   - reset moves the branch pointer backwards eliminating commits
   - revert creates a brand new commit which reverses the changes from a commit (Because it results in a new commit we will prompted to enter a commit message)
 
