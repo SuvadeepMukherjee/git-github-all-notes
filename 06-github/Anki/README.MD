@@ -227,3 +227,11 @@ Note ➡️ This will put us in detached HEAD
     git push origin main
     ```
 
+**Q15**: What are the steps to open a Pull Request ?
+
+**Solution**:
+
+- Create a new branch , make new changes commit
+- Push that branch
+- open PR from the browser
+
