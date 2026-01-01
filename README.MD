@@ -4,8 +4,8 @@
 | --------------- | ---- |
 | Installation    | ✅    |
 | Committing      | ✅    |
-| Branches        |      |
-| Stashing        |      |
+| Branches        | ✅    |
+| Stashing        | ✅    |
 | Undoing Changes |      |
 | Github          |      |
 | Cherry-pick     |      |
